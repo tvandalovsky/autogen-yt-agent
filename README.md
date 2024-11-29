@@ -7,16 +7,9 @@
 To install the package from the GitHub repository, use the following command:
 
 ```bash
-pip install autogen_ext[openai]
 pip install git+https://github.com/gagb/autogen-yt-agent
 ```
 
 ## Usage
-The following code snippet demonstrates how to use the `autogen-yt-agent` package:
-
-```python
-from autogen_yt_agent import YouTubeAgent
-
-agent = YouTubeAgent(name='yt-agent',
-                    client=)
-```
+See example.py for a simple example of how to use this agent. Note, this example requires
+the OpenAI client, so please install the relevant extension.
