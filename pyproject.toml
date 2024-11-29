@@ -10,9 +10,10 @@ dependencies = [
     "ruff==0.4.8",
     "autogen-agentchat==0.4.0.dev8",
     "openai-whisper",
-    "python-ffmpeg",
+    "ffmpeg-python",
     "yt-dlp",
     "opencv-python",
+    "pip>=24.3.1",
 ]
 
 [tool.ruff]

@@ -15,7 +15,8 @@ class YouTubeAgent(AssistantAgent):
         *,
         tools: List[Tool | Callable[..., Any] | Callable[..., Awaitable[Any]]] | None = None,
         description: str = "An agent that can download and process YouTube videos.",
-        system_message: str | None = "You are a helpful agent that is an expert at processing YouTube videos.",
+        system_message: str
+        | None = "You are a helpful agent that is an expert at processing YouTube videos. Reply with TERMINATE to end the conversation.",
     ):
         super().__init__(
             name=name,
