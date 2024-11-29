@@ -10,5 +10,5 @@ pip install git+https://github.com/gagb/autogen-yt-agent
 ```
 
 ## Usage
-See example.py for a simple example of how to use this agent. Note, this example requires
+See [example.py](./example.py) for a simple example of how to use this agent. Note, this example requires
 the OpenAI client, so please install the relevant extension.
