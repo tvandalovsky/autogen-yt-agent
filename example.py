@@ -5,7 +5,7 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 
 # ensure autogen_ext is installed; e.g., pip install 'autogen_ext[openai]==0.4.0.dev8'
 # if you want to use a different model client (e.g., anthropic), you can install
-# the relevant extension instead
+# the relevant extension instead. Also ensure you've set your OPENAI_API_KEY environment variable.
 from autogen_ext.models import OpenAIChatCompletionClient
 from autogen_yt_agent import YouTubeAgent
 
