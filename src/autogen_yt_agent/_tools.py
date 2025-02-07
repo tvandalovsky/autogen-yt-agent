@@ -34,6 +34,22 @@ def download_youtube_video(url: str, output_path: str) -> str:
         return f"An error occurred: {e}"
 
 
+def get_video_views(url: str) -> str:
+    """
+    Returns the number of views a video has.
+
+    :param url: URL of the YouTube video.
+    :return: the number of views the video has.
+    """
+    try:
+        with yt_dlp.YoutubeDL() as ydl:
+            info = ydl.extract_info(url, download=False)
+            return f"The video has {info['view_count']} views."
+        return "Test"
+    except Exception as e:
+        return f"An error occurred: {e}"
+
+
 def transcribe_audio_with_timestamps(audio_path: str) -> str:
     """
     Transcribes the audio file with timestamps using the Whisper model.
@@ -79,4 +95,5 @@ __all__ = [
     "download_youtube_video",
     "transcribe_audio_with_timestamps",
     "get_video_length",
+    "get_video_views",
 ]
