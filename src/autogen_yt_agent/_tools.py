@@ -45,7 +45,6 @@ def get_video_views(url: str) -> str:
         with yt_dlp.YoutubeDL() as ydl:
             info = ydl.extract_info(url, download=False)
             return f"The video has {info['view_count']} views."
-        return "Test"
     except Exception as e:
         return f"An error occurred: {e}"
 
